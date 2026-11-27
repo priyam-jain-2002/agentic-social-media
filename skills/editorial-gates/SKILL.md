@@ -8,6 +8,19 @@ H4 Authenticity: not generic AI commentary, synthetic life lesson, fabricated an
 H5 Platform fit: identified audience and justified platform selection.
 H6 Editorial integrity: no plagiarized content, fake references or misleading graphic.
 
+**Mandatory discovery gates (run on EACH platform separately)** — [discoverability](../discoverability/SKILL.md)
+- **A Taxonomy and audience:** one primary pillar, one defined reader/job, natural technical entities, differentiation and credible platform fit. No fit → REVISE or SKIP.
+- **B Hashtags and search terms:** exact search phrases verified; hashtags default NONE, each optional tag justified. Unjustified/irrelevant tags → REMOVE before approval.
+- **C People and organization tags:** every mention grounded in real role, accurate identity and verified profile/handle. Fake association → HOLD; unrelated/engagement-bait tag → REMOVE; collaboration without consent → HOLD.
+
+**Mandatory packaging gates (run on EACH platform separately)** — [packaging](../packaging/SKILL.md)
+- **D Preview:** reader and payoff legible in first lines.
+- **E Delivery:** insight early, evidence follows, filler removed.
+- **F Proof and media:** visual matches claim, no fabricated charts; unverified central claim → HOLD.
+- **G Voice:** natural and non-formulaic.
+
+Do not mark READY while A/B/C or D–G are unresolved, even if numeric quality scores pass. These gates allow **zero hashtags** and **zero people tags**; omission is often the correct decision.
+
 **Quality rubric** (score 0–5 each, 40 max; scores are editorial heuristics not platform ranking formulas):
 Q1 Distinctive original insight / value
 Q2 Opening 1–2 lines establish who cares and why
