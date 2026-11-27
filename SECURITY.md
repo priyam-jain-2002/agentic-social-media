@@ -1,6 +1,6 @@
 # Security and publication boundaries
 
-This is a **public repository for reusable instructions and code only**. Never commit drafts, unpublished posts, weekly radar outputs, personal performance dashboards, source-document extracts, employer/client information, keys, tokens, API credentials or confidential notes.
+This is a **public repository for reusable instructions, skills, code and synthetic documentation examples only**. Never commit actual drafts, unpublished personal posts, generated weekly radar outputs, personal performance dashboards, source-document extracts, employer/client information, keys, tokens, API credentials or confidential notes. Synthetic examples must be clearly labeled and must not imply real users, results or publications.
 
 ## Scope and storage
 - Store generated outputs in chat, a user's expressly chosen private workspace, or an approved publishing CMS.
