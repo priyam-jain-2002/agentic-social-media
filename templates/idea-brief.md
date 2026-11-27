@@ -1,0 +1,24 @@
+# Idea brief: [working title]
+
+- Date:
+- Raw observation / analogy (verbatim source):
+- Claim in one sentence:
+- Primary reader + pain:
+- Desired useful takeaway:
+- Taxonomy tags:
+- Why this author has firsthand standing:
+- Evidence ledger: | Claim | Type | Source URL or artifact | Date | Confidence | Shareable? |
+- Originality / competing content:
+- Strongest expert objection:
+- Analogy mapping / where it fails:
+- Sensitive or confidential material:
+- Why now / shelf life:
+- Best artifact or demo:
+- LinkedIn: PUBLISH / ADAPT / SKIP; reason; intended reader payoff
+- X: PUBLISH / ADAPT / SKIP; reason; intended reader payoff
+- Blog: PUBLISH / ADAPT / SKIP; reason; intended reader payoff
+- Draft location(s):
+- Scorecard + hard-gate decisions:
+- Visual decision / brief:
+- Publication consent/status:
+- Review: 24h / 72h / 7d, observed vs inference:
