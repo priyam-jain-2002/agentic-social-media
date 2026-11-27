@@ -79,13 +79,19 @@ def main() -> int:
         errors.append("Missing installable skill: skills/agentic-social-media/SKILL.md")
     else:
         body = installed.read_text(encoding="utf-8")
-        if not body.startswith("---\\n"):
+        lines = body.splitlines()
+        if not lines or lines[0] != "---":
             errors.append("Distributable SKILL.md has no YAML frontmatter")
         else:
-            front = body.split("---", 2)[1]
-            if not re.search(r"(?m)^name: agentic-social-media\\s*$", front):
+            try:
+                closing = lines.index("---", 1)
+            except ValueError:
+                errors.append("Distributable skill frontmatter is not closed")
+                closing = 1
+            fields = lines[1:closing]
+            if "name: agentic-social-media" not in fields:
                 errors.append("Distributable skill name must match folder")
-            if not re.search(r"(?m)^description: .{30,}$", front):
+            if not any(line.startswith("description: ") and len(line) > 45 for line in fields):
                 errors.append("Distributable skill needs a meaningful description")
         for required in ("research.md", "platforms.md", "gates.md", "visuals.md", "examples.md"):
             if not (installed.parent / "references" / required).is_file():
