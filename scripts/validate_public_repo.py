@@ -19,7 +19,7 @@ ALLOWED_TOP_LEVEL = {
     "integrations", "research", "scripts", "skills", "sources", "templates",
 }
 OUTPUT_COMPONENTS = {
-    "drafts", "posts", "content", "outputs", "out", "private", "analytics",
+    "drafts", "posts", "content", "outputs", "out", "private",
     "insights", "reports", "radars", "weeks",
 }
 PERMITTED_RESEARCH = {"research/evidence.md"}
