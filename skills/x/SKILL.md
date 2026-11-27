@@ -4,6 +4,7 @@
 
 ## Fit gate
 PUBLISH if the thesis survives in one sharp self-contained post, or if an ongoing relevant conversation can be improved with a direct, evidence-backed reply. ADAPT if a link to code/chart adds meaning. SKIP if meaning depends on lengthy caveats, real customer context is sensitive, or the topic has no distinctive angle.
+- Run [mandatory discoverability Gates A/B/C](../discoverability/SKILL.md) and [packaging Gates D–G](../packaging/SKILL.md) for X independently. Default no hashtags; if needed use X's recommendation of no more than two. Verify exact handles and relevance.
 - Default one post; thread only when steps/evidence genuinely need multiple units.
 - State the observation/claim immediately; include concrete artifact or source where reasonable.
 - Crisp syntax; avoid motivational slogans, empty rhetorical questions, hashtag chains, repetitive 'hot take' phrasing.
