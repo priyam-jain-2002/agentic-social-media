@@ -1,6 +1,7 @@
 ---
 name: agentic-social-media
 description: Evidence-first social media editorial skill for researching weekly AI, engineering and product topics; turning firsthand work or one analogy into platform-native LinkedIn, X and blog content; enforcing human voice, source accuracy, relevant tags and mentions, image briefs and performance reviews. Use when deciding what is worth posting, drafting, revising or auditing social content.
+license: MIT
 compatibility: Works with Markdown-reading agents. External research and account connectors are optional; human approval required for publishing.
 ---
 
