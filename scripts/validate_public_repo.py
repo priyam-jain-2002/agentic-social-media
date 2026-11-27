@@ -15,7 +15,7 @@ from urllib.parse import unquote
 ROOT = Path(__file__).resolve().parents[1]
 ALLOWED_TOP_LEVEL = {
     ".github", ".gitignore", "AGENTS.md", "CLAUDE.md", "CONTRIBUTING.md",
-    "PLAYBOOK.md", "README.md", "SECURITY.md", "WORKFLOW.md",
+    "PLAYBOOK.md", "README.md", "SECURITY.md", "WORKFLOW.md", "LICENSE",
     "examples", "integrations", "research", "scripts", "skills", "sources", "templates",
 }
 OUTPUT_COMPONENTS = {
