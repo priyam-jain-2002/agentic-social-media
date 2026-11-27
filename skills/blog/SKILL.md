@@ -1,6 +1,6 @@
 # Skill: Personal blog (TERTIARY)
 
-**Job:** durable technical or founder writing that earns search/referral traffic by providing original evidence, reproducibility, and deeper reasoning. The blog is **not** a transcript of the LinkedIn post.
+**Job:** durable technical or founder writing that earns search/referral traffic by providing original evidence, reproducibility, and deeper reasoning. The blog is **not** a transcript of the LinkedIn post. Deliver blog drafts in chat or to an approved **separate private workspace/CMS**, never to the public framework repository.
 
 ## Fit gate
 PUBLISH if durable search intent and enough original evidence to explain the work, method, trade-offs, counterarguments and alternatives. ADAPT if screenshots, code, numbers, sources or original methodology need collecting. SKIP when the entire useful insight fits a short post, timely news will decay, or there is no original value beyond summaries.
