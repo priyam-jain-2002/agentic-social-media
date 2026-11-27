@@ -17,6 +17,12 @@ Primary readers: engineers building AI/products, tech leads, founders/operators,
 
 Evidence ladder (highest to lowest): firsthand artifact + reproducible result; measurements + method; firsthand account; primary documentation; attributed reporting; inference; speculation. Use the highest available rung and don't present lower rungs as proven facts.
 
+## Insight supply: weekly external signals + firsthand work
+
+There are two independent feeders: [weekly topic radar](skills/topic-radar/SKILL.md) governed by [sources/RADAR.md](sources/RADAR.md), and [firsthand insight extraction](skills/insight-extraction/SKILL.md). Both go through an evidence/privacy/novelty gate before reaching the platform router. See [WORKFLOW.md](WORKFLOW.md) for the suggested weekly schedule, the [weekly radar template](templates/weekly-topic-radar.md), the [insight card](templates/insight-card.md), and the [initial November 2026 sample](research/weeks/2026-11-27.md).
+
+The radar scouts **problems and potential original experiments**, not generic headlines. A no-post week is acceptable; a research-only item must never be silently promoted to publish-ready.
+
 ## Canonical idea -> three independent editorial decisions
 Idea record holds: observation, audience, claim, tension, novelty relative to prior posts, practical payoff, proof, counterargument, source URLs, restrictions and publish window.
 Then route independently:
@@ -26,7 +32,7 @@ Then route independently:
 Possible output: `LinkedIn=PUBLISH; X=SKIP; Blog=SKIP`. **Never create filler to fill all platforms.**
 
 ## Workflow / agents
-`intake -> evidence-check -> counterargument -> platform-fit -> draft -> humanize -> visual-proof -> publish-gate -> approval -> publish -> review`
+`weekly-radar + firsthand-insights -> intake -> evidence-check -> counterargument -> platform-fit -> draft -> humanize -> visual-proof -> publish-gate -> approval -> publish -> review`
 These are review stages, not promises of independent autonomous agents. Each stage records its inputs, verdict and unresolved issues. Separate research from writing to limit confirmation bias.
 
 ## Required publication metadata checks
