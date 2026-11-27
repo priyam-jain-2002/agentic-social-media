@@ -128,7 +128,7 @@ This is where portability becomes especially relevant to smaller compute operato
 
 A practical first step is **workload-level routing**: decide which compatible pool should run a whole job or inference deployment, based on availability, measured performance, data movement and economics.
 
-That is very different from making multiple GPU brands behave like a single tightly coupled accelerator. Tensor parallelism and other distributed execution schemes have additional constraints around communication, synchronization, interconnects and supported kernels. A common job scheduler cannot make those constraints disappear.
+That is very different from making multiple GPU brands behave like a single tightly coupled accelerator. Tensor parallelism and other distributed execution schemes have additional constraints around communication, synchronization, interconnects and supported kernels. For example, [NVIDIA NCCL](https://developer.nvidia.com/nccl) and [AMD RCCL](https://rocm.docs.amd.com/projects/rccl/en/latest/) are each optimized collective-communication stacks for their respective GPU ecosystems. A common job scheduler cannot make those constraints disappear.
 
 The sensible initial objective is *portable placement of supported workloads*, not the promise of universally interchangeable GPU memory.
 
@@ -156,3 +156,5 @@ AI infrastructure becomes more flexible when engineers can make that choice usin
 - [Triton language and compiler](https://github.com/triton-lang/triton)
 - [Intel: CUDA-to-SYCL migration](https://www.intel.com/content/www/us/en/developer/tools/oneapi/training/migrate-from-cuda-to-cpp-with-sycl.html)
 - [MLCommons: datacenter inference benchmarking](https://mlcommons.org/benchmarks/inference-datacenter/)
+- [NVIDIA NCCL communication primitives](https://developer.nvidia.com/nccl)
+- [AMD RCCL communication primitives](https://rocm.docs.amd.com/projects/rccl/en/latest/)
