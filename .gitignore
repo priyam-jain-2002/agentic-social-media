@@ -1,0 +1,23 @@
+# This repository contains ONLY reusable framework files.
+# Keep generated content, personal notes and analytics in a separate private location.
+drafts/
+posts/
+content/
+outputs/
+out/
+private/
+analytics/
+insights/
+reports/
+radars/
+research/weeks/
+*.local.md
+*.private.md
+*.draft.md
+*.post.md
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.DS_Store
