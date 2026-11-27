@@ -2,7 +2,7 @@
 
 **Trigger:** Weekly scheduled scan, 'what should I post about', 'find relevant topics this week', or an external event to evaluate.
 **Input:** scan dates (default preceding 7 complete days), [sources/RADAR.md](../../sources/RADAR.md), recent published/backlog topics, any new firsthand idea cards, existing editorial rules.
-**Output:** dated [weekly radar](../../templates/weekly-topic-radar.md) with independently verified source links and 3–5 prioritized topic candidates, NOT forced posts.
+**Output:** dated [weekly radar](../../templates/weekly-topic-radar.md) delivered in chat or a private workspace, with independently verified source links and 3–5 prioritized topic candidates; **never commit output files to this public repository**. NOT forced posts.
 
 ## Workflow
 1. Establish exact local scan dates and timezone. Search the preceding **7 days** for fresh signals, extend to 30 days only for important context; label older evergreen leads as evergreen rather than this week's news.
