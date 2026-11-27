@@ -4,6 +4,14 @@ A Markdown-first editorial operating system: **one evidence-backed idea -> up to
 
 **Platform order:** LinkedIn first, X second, personal blog third. No obligation to publish on every platform.
 
+## Weekly topic discovery
+- [WORKFLOW.md](WORKFLOW.md): the weekly operating rhythm, split between external news and firsthand project evidence.
+- [skills/topic-radar/SKILL.md](skills/topic-radar/SKILL.md): scan, validate, deduplicate and rank topic signals.
+- [skills/insight-extraction/SKILL.md](skills/insight-extraction/SKILL.md): capture work-in-progress observations without inventing or leaking project details.
+- [sources/RADAR.md](sources/RADAR.md): prioritized primary-source watchlist and scanning coverage.
+- [templates/weekly-topic-radar.md](templates/weekly-topic-radar.md) and [templates/insight-card.md](templates/insight-card.md): reusable capture formats.
+- [research/weeks/2026-11-27.md](research/weeks/2026-11-27.md): first sourced, real-week shortlist with explicit HOLD/ADAPT decisions.
+
 ## Start here
 - [AGENTS.md](AGENTS.md): shared instructions for ChatGPT, Claude Code and other Markdown-reading assistants.
 - [CLAUDE.md](CLAUDE.md): Claude entrypoint, redirects to canonical agent rules.
@@ -21,6 +29,8 @@ A Markdown-first editorial operating system: **one evidence-backed idea -> up to
 - [examples/headless-commerce.md](examples/headless-commerce.md): real three-channel routing example, including a legitimate blog HOLD.
 
 ## Example prompts
+- **Weekly discovery:** 'Use WORKFLOW.md and topic-radar/SKILL.md. Research the previous seven days from primary sources, find 3–5 genuine engineering/product problems, include links, a testable original angle, platform decisions and HOLD where appropriate. Do not draft automatically.'
+- **Project observation:** 'Use insight-extraction/SKILL.md on my recent building notes, identify what is safe to share, evidence gaps and potential worthwhile ideas.'
 - **New idea:** 'Use AGENTS.md. Evaluate this observation for LinkedIn, X and blog; research and challenge it; don't draft until the idea passes gates: [idea].'
 - **One analogy:** 'Map [source concept] to [target issue], state where it breaks, then independently route to LinkedIn/X/blog with SKIP allowed.'
 - **Review draft:** 'Audit this copy with editorial-gates and voice. Explain the most important weakness before editing.'
