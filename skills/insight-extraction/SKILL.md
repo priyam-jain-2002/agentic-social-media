@@ -3,7 +3,7 @@
 **Trigger:** User shares a project milestone, bug, technical decision, demo, customer interaction, open-source contribution, or learning. Can be captured between weekly research scans.
 
 ## No-effort intake
-Ask for at most one missing critical fact at a time if needed; otherwise record a rough [insight card](../../templates/insight-card.md) without forcing a content draft. Accept a sentence, commit link, screenshot, voice-note summary or incident description.
+Ask for at most one missing critical fact at a time if needed; otherwise return a rough [insight card](../../templates/insight-card.md) **in chat or an approved private destination** without forcing a content draft. Accept a sentence, commit link, screenshot, voice-note summary or incident description.
 
 Extract:
 1. **What happened:** exact event; observed vs inferred; timeline.
@@ -18,6 +18,6 @@ Extract:
 
 **Capture gate:** If noteworthy but not proven, store as UNVERIFIED / HOLD. Don't translate a private engineering report into public content without explicit approval.
 
-**Handling confidentiality:** This repository is public. Never commit nonpublic employer information, private customer details, proprietary code, raw screenshots, internal benchmarks or sensitive financials. Store only a safe high-level placeholder or keep the detailed card outside this repo in the user's private workspace. Never silently sync a connected repo.
+**Handling confidentiality:** This repository is public. Never commit nonpublic employer information, private customer details, proprietary code, raw screenshots, internal benchmarks or sensitive financials. Store the detailed card only outside this repo in a private workspace; this public framework repository accepts **no** generated idea cards, even sanitized ones. Never silently sync a connected repo.
 
 **Output:** one card with first-hand provenance, one compelling possible statement (not marketing copy), one counterargument, needed evidence, and route suggestions for LinkedIn/X/blog.
