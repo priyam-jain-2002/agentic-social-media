@@ -5,6 +5,8 @@
 ## Fit gate
 PUBLISH if durable search intent and enough original evidence to explain the work, method, trade-offs, counterarguments and alternatives. ADAPT if screenshots, code, numbers, sources or original methodology need collecting. SKIP when the entire useful insight fits a short post, timely news will decay, or there is no original value beyond summaries.
 
+Run [mandatory discoverability Gates A/B/C](../discoverability/SKILL.md) and [packaging Gates D–G](../packaging/SKILL.md), adapting them to search intent, accessible sourcing and credible author attribution. Blog does not use social @mentions/hashtags.
+
 ## Structure
 - Specific user-facing title; descriptive slug, summary/dek and date.
 - State answer/claim in intro, then context, evidence, worked example, architecture/method, constraints, alternatives, limitations, who should/shouldn't use it and references.
