@@ -19,15 +19,27 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Install skill from published GitHub repository
+      - name: Install skill from public GitHub repo
         shell: bash
         run: |
           set -euo pipefail
           consumer="$RUNNER_TEMP/skill-consumer"
           mkdir -p "$consumer"
           cd "$consumer"
+          git init --quiet
+
+          echo "Installing agentic-social-media skill from GitHub..."
           npx --yes skills add priyam-jain-2002/agentic-social-media --skill agentic-social-media -a claude-code -y --copy
-          test -s ".agents/skills/agentic-social-media/SKILL.md"
-          test -s ".agents/skills/agentic-social-media/references/gates.md"
-          test -s ".agents/skills/agentic-social-media/references/examples.md"
-          echo "Verified installable skill and bundled references"
+
+          echo "Installed skill files:"
+          find "$consumer" -maxdepth 8 -type f -name '*.md' -print | sort
+          skill_path="$(find "$consumer" -type f -path '*/agentic-social-media/SKILL.md' -print -quit)"
+          if [[ -z "$skill_path" ]]; then
+            echo "::error title=Missing skill::The npx installer returned without a discoverable agentic-social-media/SKILL.md"
+            exit 1
+          fi
+
+          skill_dir="$(dirname "$skill_path")"
+          test -s "$skill_dir/references/gates.md"
+          test -s "$skill_dir/references/examples.md"
+          echo "Verified installed skill and required bundled references: $skill_dir"
