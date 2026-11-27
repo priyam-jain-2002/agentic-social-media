@@ -1,0 +1,39 @@
+{
+  "$schema_description": "Illustrative capability policy only. Not a runnable MCP client configuration or credentials file.",
+  "research": {
+    "public_web": {
+      "enabled": true,
+      "mode": "read_only",
+      "sources_manifest": "sources/RADAR.md"
+    },
+    "github": {
+      "enabled": false,
+      "mode": "read_only",
+      "scope": "explicitly approved repositories only"
+    },
+    "private_ledger": {
+      "enabled": false,
+      "provider": "Notion or private local notes",
+      "mode": "read_only"
+    },
+    "blog_analytics": {
+      "enabled": false,
+      "provider": "authorized Search Console/CMS",
+      "mode": "read_only"
+    },
+    "social_analytics": {
+      "enabled": false,
+      "provider": "authorized first-party exports",
+      "mode": "read_only"
+    }
+  },
+  "publication": {
+    "automatic_posts": false,
+    "allow_write_actions": false,
+    "human_approval_required": true
+  },
+  "storage": {
+    "public_repository": "framework_only",
+    "editorial_outputs": "chat_or_separate_private_workspace"
+  }
+}

@@ -11,7 +11,7 @@ Status: INTAKE / RESEARCH / REVISE / READY / APPROVED / PUBLISHED / SKIPPED / HE
 | Blog | | | | | |
 
 ## Copy
-Store approved platform copy under distinct headings or files. No blind cross-posting.
+Store approved platform copy under distinct headings or files **only in an explicitly approved private workspace or conversation**, never in this public repository. No blind cross-posting.
 
 ## Required taxonomy, hashtag and people-tag gate
 

@@ -26,7 +26,7 @@ Last checked: 2026-11-27. This is **editorial evidence**, not a list of guarante
 - **Reasonably grounded:** relevance to readers, authentic expertise, useful originals, specific evidence and trust matter.
 - **Authorial experiments, not platform directives:** 80–140 word LinkedIn starting range; hook in first two lines; 0–3 hashtags; infographic minimalism; 72h analysis; selective cross-posting.
 - **Not established:** 'image posts always win', 'external links always get penalized', 'a specific posting hour guarantees reach', 'the algorithm loves one-line paragraphs', or '3 hashtags outperform 4'.
-- **Avoid cherry-picking:** public viral post screenshots have survivor bias. Compare a cohort of posts from creators with similar follower levels and topics, include misses, and document denominators, dates, and attribution. If this dataset has not been gathered, say so. This repository is grounded primarily in public platform guidance plus the author's observed post results, **not** a verified dataset of top-performing small creators.
+- **Avoid cherry-picking:** public viral post screenshots have survivor bias. Compare a cohort of posts from creators with similar follower levels and topics, include misses, and document denominators, dates, and attribution. If this dataset has not been gathered, say so. This repository is grounded primarily in public platform guidance, **not** a verified dataset of top-performing small creators.
 - **No false causal inference:** low impressions could reflect distribution; low interaction rate could reflect topic/audience/proof/packaging. No single post isolates causality.
 
 ## Future research backlog
@@ -34,6 +34,6 @@ Last checked: 2026-11-27. This is **editorial evidence**, not a list of guarante
 - Extract only patterns that survive within-account comparisons; record uncertainty and seasonality.
 - Periodically re-audit changing platform UI/features and algorithm statements.
 
-## Personal observations to test, not generalize
-- Prior professional/event posts and practical tooling posts showed stronger impressions than two thesis-first posts. The latter lacked an immediately inspectable artifact and delayed a clear reader payoff. This is a plausible editorial diagnosis, not proof of feed suppression.
-- Track results with [analytics skill](../skills/analytics/SKILL.md); never encode user metrics as guaranteed benchmarks.
+## Research hygiene
+- Compare outcomes at matched post ages and audiences; never claim causality from a single published result.
+- Keep actual performance datasets outside this public framework repository. Use [analytics skill](../skills/analytics/SKILL.md) to interpret them privately.
