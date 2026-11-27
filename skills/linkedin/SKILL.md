@@ -13,7 +13,7 @@ Most useful forms: first-person demonstration with result; hard engineering trad
 - Default **80–140 words as an experiment**; expand only for meaningful proof or nuance. Shorter isn't intrinsically algorithmically superior.
 - Normal readable paragraphs. Don't convert each sentence to a single line. No gimmicky 'viral' typography.
 - Prefer a real screenshot, demo, code/result crop or useful clean diagram over decorative infographics.
-- Tags: only real collaborators and source organizations, when relevant. Hashtags: 0–3 high-relevance; no reach promises. Links can appear where useful; don't invent penalties.
+- Run [mandatory discoverability Gates A/B/C](../discoverability/SKILL.md) and [packaging Gates D–G](../packaging/SKILL.md). Hashtags default to none; 1–3 only with a genuine topical use. LinkedIn's 2025 feed Q&A explicitly says hashtags do not affect distribution. Verify actual tagged profiles and collaboration consent. Links can appear where useful; don't invent penalties.
 - Consider privacy: avoid language signaling job search to employer; no internal system details without clearance.
 - For collaborative work: accurately distinguish team result from personal contribution. Confirm co-authoring/mentions feature availability before advising exact UI.
 - Never guarantee impressions or likes; performance evaluated with comparable windows and relevant readership.
