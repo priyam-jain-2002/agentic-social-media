@@ -14,6 +14,14 @@ Last checked: 2026-11-27. This is **editorial evidence**, not a list of guarante
 9. [Google Search Central — AI search optimization](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide). Recommends useful non-commodity content; SEO fundamentals still apply.
 10. [Google Search Central — SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide). Supports descriptive titles, technical indexability and human-useful organization.
 
+## Directly checked discoverability and mentions documentation
+- [LinkedIn feed Q&A by Gyanda Sachdeva (Dec 2025)](https://www.linkedin.com/pulse/top-linkedin-feed-questions-2025-gyanda-sachdeva-anl2e/): "Hashtags do not impact distribution". This is a first-party statement about LinkedIn's feed, not proof hashtags lack all search/discovery or organizational utility.
+- [LinkedIn Help: mentions](https://www.linkedin.com/help/linkedin/answer/a525082/mention-people-in-your-posts): select real accounts in the suggestions list; typed @names are not a verified live tag.
+- [LinkedIn Help: mentions, tags and collaborations settings](https://www.linkedin.com/help/linkedin/answer/a522861): account settings may affect whether a member can be mentioned or collaborate.
+- [X Help: how to use hashtags](https://help.x.com/en/using-x/how-to-use-hashtags): hashtags help categorize and be discoverable in X search; X recommends no more than two.
+- [X Authenticity policy](https://help.x.com/en/rules-and-policies/authenticity): prohibits trending-hashtag abuse or coordinated inauthentic engagement.
+- [Google Search: article structured data](https://developers.google.com/search/docs/appearance/structured-data/article): use valid, accurately implemented structured data where appropriate.
+
 ## What we can / cannot conclude
 - **Reasonably grounded:** relevance to readers, authentic expertise, useful originals, specific evidence and trust matter.
 - **Authorial experiments, not platform directives:** 80–140 word LinkedIn starting range; hook in first two lines; 0–3 hashtags; infographic minimalism; 72h analysis; selective cross-posting.
