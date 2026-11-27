@@ -19,7 +19,7 @@ Evidence ladder (highest to lowest): firsthand artifact + reproducible result; m
 
 ## Insight supply: weekly external signals + firsthand work
 
-There are two independent feeders: [weekly topic radar](skills/topic-radar/SKILL.md) governed by [sources/RADAR.md](sources/RADAR.md), and [firsthand insight extraction](skills/insight-extraction/SKILL.md). Both go through an evidence/privacy/novelty gate before reaching the platform router. See [WORKFLOW.md](WORKFLOW.md) for the suggested weekly schedule, the [weekly radar template](templates/weekly-topic-radar.md), the [insight card](templates/insight-card.md), . See [integrations/README.md](integrations/README.md) for optional source access and the privacy boundary.
+There are two independent feeders: [weekly topic radar](skills/topic-radar/SKILL.md) governed by [sources/RADAR.md](sources/RADAR.md), and [firsthand insight extraction](skills/insight-extraction/SKILL.md). Both go through an evidence/privacy/novelty gate before reaching the platform router. See [WORKFLOW.md](WORKFLOW.md) for the suggested weekly schedule, the [weekly radar template](templates/weekly-topic-radar.md), the [insight card](templates/insight-card.md). See [integrations/README.md](integrations/README.md) for optional source access and the privacy boundary.
 
 The radar scouts **problems and potential original experiments**, not generic headlines. A no-post week is acceptable; a research-only item must never be silently promoted to publish-ready.
 
