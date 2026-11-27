@@ -90,7 +90,7 @@ No integrations are required. Verified public research helps current topics; app
 
 This repository contains only reusable skills, instructions, examples, source methods, and validation code. **Finished posts, editorial drafts, private work, raw analytics and generated weekly reports must not be committed here**, even on PR branches. The guard in [scripts/validate_public_repo.py](scripts/validate_public_repo.py) checks file layout and links.
 
-Please see [CONTRIBUTING.md](CONTRIBUTING.md) before submitting changes.
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) before submitting changes. Released under the [MIT License](LICENSE).
 
 ## Skills.sh distribution
 
