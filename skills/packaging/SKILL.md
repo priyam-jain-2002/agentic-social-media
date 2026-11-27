@@ -2,11 +2,12 @@
 
 **Purpose:** prevent clear but tedious posts that reveal the valuable point too late.
 
-## Lessons from previous posts (hypotheses, not causal proof)
-- The **sales-tonality / AI website experiment** foregrounded a sales masterclass rather than the actual before/after AI interpretation result. It was well written but the professional reader payoff was delayed.
-- The **CUDA / India thesis** led with abstract geopolitical context and a future possibility, without a concrete experiment or result readers could inspect. Low engagement alone does not prove cause.
-- A technically attractive infographic did not replace missing evidence, and long captions risked repeating its content.
-- Practical coding/workflow and real-event posts previously attracted more engagement, but sample sizes and post ages differ.
+## Common failure modes (editorial checks, not causal ranking claims)
+- Lengthy generic background delays the actual insight, result or decision.
+- Speculative commentary offers no experiment, sourced counterargument or artifact to inspect.
+- A decorative infographic stands in for original evidence or repeats an already long caption.
+- A post has no specific reader payoff beyond the author reporting an opinion.
+- Observational post-performance data alone cannot establish causality; investigate alternative explanations.
 
 ## Gate D — Scrolling/preview test (PASS / REWRITE)
 Show only the first ~200 characters (editorial approximation, not a LinkedIn UI claim) and the thumbnail if any. Can a new reader answer: `Who is this for?` `What is the useful or surprising point?` `Why continue?` If not, REWRITE the hook.
