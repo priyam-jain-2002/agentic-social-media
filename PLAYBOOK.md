@@ -29,6 +29,10 @@ Possible output: `LinkedIn=PUBLISH; X=SKIP; Blog=SKIP`. **Never create filler to
 `intake -> evidence-check -> counterargument -> platform-fit -> draft -> humanize -> visual-proof -> publish-gate -> approval -> publish -> review`
 These are review stages, not promises of independent autonomous agents. Each stage records its inputs, verdict and unresolved issues. Separate research from writing to limit confirmation bias.
 
+## Required publication metadata checks
+
+Before approval, apply [discoverability](skills/discoverability/SKILL.md) to taxonomy/audience fit (**Gate A**), hashtags/search vocabulary (**Gate B**) and collaborator/brand mentions (**Gate C**) separately for LinkedIn, X and blog. No tags or no publication can be correct. Then apply [packaging](skills/packaging/SKILL.md) Gates D–G for the hook, early payoff, proof/visual coherence and human voice. See [research/lessons.md](research/lessons.md) for why these checks were added.
+
 ## Marketing/tone principles
 Reader problem before self-promotion. Show observable differentiation, not self-congratulation. Choose one action to optimize: explain, teach, share proof, invite informed discussion, or direct to a useful artifact. Avoid broad generic CTA. Mention collaborators accurately, no tag bait. Source any time-sensitive claims; do not manufacture endorsement or authority.
 
@@ -48,6 +52,12 @@ Blog: PUBLISH|ADAPT|SKIP — reason
 Gate: READY|REVISE|HOLD|SKIP
 Unverified / sensitive: ...
 Visual: none|photo|demo|diagram|chart — why
+Taxonomy + reader intent: ...
+Discovery gates A/B/C: PASS|REVISE|REMOVE|VERIFY|HOLD|SKIP + reasons
+Packaging gates D/E/F/G: PASS|REWRITE|HOLD + reasons
+LinkedIn: natural terms, optional hashtags, verified mentions (or none)
+X: natural terms, optional hashtags, verified handles (or none)
+Blog: maintained category/tags, SEO search intent (or SKIP)
 ```
 
 ## External skills policy
