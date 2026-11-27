@@ -1,72 +1,101 @@
 # Agentic Social Media
 
-**An evidence-first, Markdown-based editorial operating system for LinkedIn, X and a personal blog.** It turns one real observation or verified external signal into **zero to three platform-native decisions**—never automatic cross-posting.
+**A portable editorial skill for people who actually build things.**
 
-Works with ChatGPT, Claude Code or another assistant that can read Markdown. No account connection, API key, hosted service or build step is required.
+Turn original engineering work, a verified research finding, or a useful analogy into credible LinkedIn, X and blog writing. It challenges the idea before drafting, keeps the voice natural, and can confidently recommend **not posting**.
 
-> **Framework-only repository.** Finished posts, drafts, dated weekly radar outputs, analytics and private project notes belong in chat or a separate private workspace—not in this repository. [Privacy rules](SECURITY.md).
+**LinkedIn first · X second · Blog third · No forced cross-posting**
 
-## Quick start
+[Read the skill](skills/agentic-social-media/SKILL.md) · [Explore examples](examples/README.md) · [Understand the gates](skills/agentic-social-media/references/gates.md) · [Agent Skills specification](https://agentskills.io/specification)
 
-1. Ask your assistant to read [AGENTS.md](AGENTS.md) (Claude Code also reads [CLAUDE.md](CLAUDE.md)).
-2. Share a project observation, source article, technical claim or analogy. Alternatively request a current [weekly topic scan](skills/topic-radar/SKILL.md).
-3. The agent researches and challenges the idea, identifies reader value, and checks evidence and confidentiality.
-4. It independently chooses `PUBLISH / ADAPT / HOLD / SKIP` for LinkedIn, X and blog.
-5. Only appropriate channels receive drafts **in the conversation or user-approved private destination**. No automatic publication.
+## Install in one command
 
-Try:
-
-```text
-Read AGENTS.md and WORKFLOW.md. Research the last 7 days using
-sources/RADAR.md, then propose 3–5 topics with primary sources,
-one concrete reader problem, counterargument and experiment each.
-Independently assess LinkedIn, X and blog. Do not draft or post yet.
+```bash
+npx skills add priyam-jain-2002/agentic-social-media --skill agentic-social-media
 ```
 
-For a firsthand insight:
+For a global Claude Code installation:
 
-```text
-Read AGENTS.md and skills/insight-extraction/SKILL.md.
-Here's what I built / discovered: ...
-Find the specific claim we can prove and the reader who benefits.
-Keep the record private; don't commit content to this repository.
+```bash
+npx skills add priyam-jain-2002/agentic-social-media --skill agentic-social-media -g -a claude-code -y
 ```
 
-## Structure
+The **single distributable skill includes its own references and examples** under [skills/agentic-social-media](skills/agentic-social-media). You don't need to clone the full repository to use it.
 
-| Location | Purpose |
+For agents without an installer (including normal ChatGPT chats), share this repository and ask the assistant to read [AGENTS.md](AGENTS.md). Installation does not grant access to your social accounts or configure research integrations.
+
+## How to use it
+
+Ask your assistant to use the skill, then provide one observation or request a topic scan.
+
+| Goal | Example prompt |
 | --- | --- |
-| [AGENTS.md](AGENTS.md), [CLAUDE.md](CLAUDE.md) | Cross-client editorial contract |
-| [PLAYBOOK.md](PLAYBOOK.md) | Identity, taxonomy, audience, platform routing |
-| [WORKFLOW.md](WORKFLOW.md) | Weekly signal + firsthand insight pipeline |
-| [skills/](skills) | Independent research, publishing, editing, discovery, visuals and analytics skills |
-| [sources/RADAR.md](sources/RADAR.md) | Public-source watchlist |
-| [research/evidence.md](research/evidence.md) | Durable primary-source evidence about platform behavior |
-| [templates/](templates) | Blank reusable private-workspace templates |
-| [integrations/README.md](integrations/README.md) | Optional MCP/source connections and privacy boundaries |
-| [scripts/validate_public_repo.py](scripts/validate_public_repo.py) | Repo-only hygiene and Markdown link validation |
-| [SECURITY.md](SECURITY.md), [CONTRIBUTING.md](CONTRIBUTING.md) | Safety policy and contribution process |
+| Find new topics | "Find this week's strongest AI engineering and product topics. Give 3–5 with real source links, reader problem, proposed proof, and LinkedIn/X/blog fit. No drafts yet." |
+| Turn a build into writing | "I moved our storefront to a custom frontend and managed commerce backend. Find the one useful engineering lesson. Ask for proof if needed." |
+| Evaluate an analogy | "Could accelerator portability be analogous to cloud vendor lock-in? Check where the analogy is useful and where it fails." |
+| Fix a draft | "Audit this for originality, early payoff, natural voice, evidence, useful hashtags and legitimate mentions. Tell me if it isn't worth posting." |
+| Plan a graphic | "Only if a visual improves understanding, write a mobile-first diagram/screenshot brief with source and alt text." |
+| Review performance | "Use the 72-hour results to distinguish weak distribution, poor reader fit and low-quality engagement. Don't infer causes from one post." |
 
-## Operating principles
+### What the skill does
 
-- **Reader payoff first.** Explain a concrete result, problem, experiment or useful difference before generic context.
-- **Original evidence matters.** Never pretend to have run code, spoken to a customer or observed metrics without proof.
-- **Critical editing.** Every claim, platform choice, visual, keyword, hashtag and person tag must earn its place.
-- **No AI-slop.** Natural engineering prose; no fake suspense, slogans, or manufactured virality.
-- **Independent channel decisions.** A topic can suit a durable blog article but not a LinkedIn post (or vice versa).
-- **No publishing without approval.** Research connectors are read-only by default; no unapproved posting, DMs or repo writes.
-- **No algorithm myths.** Length and hashtag guidance are editorial experiments, not reach guarantees.
+```text
+Firsthand work / verified news
+           |
+      Idea + audience
+           |
+   Evidence + counterargument
+           |
+  Is this actually worth sharing?
+           |
+   +-------+---------+
+   |       |         |
+LinkedIn    X       Blog
+   |       |         |
+PASS / ADAPT / HOLD / SKIP
+           |
+   Natural voice, tags,
+   proof & visual checks
+           |
+   Author approves publishing
+```
+
+**The system does not promise likes, fabricate source material, automatically schedule posts or send engagement messages.**
+
+## See examples
+
+- [Headless commerce: one insight, three different decisions](examples/README.md#sample-1--a-frontend-engineer-chooses-headless-commerce)
+- [Workflow retries: why a release announcement isn't enough](examples/README.md#sample-2--a-performance-release-invites-a-correctness-question)
+
+These contain *synthetic sample openings and routing decisions*, not real personal drafts or published engagement claims. Public post links are added only after verification and permission.
+
+## Repository structure
+
+| Path | Role |
+| --- | --- |
+| [skills/agentic-social-media](skills/agentic-social-media) | **Installable**, self-contained Agent Skill |
+| [skills/](skills) | Expanded maintainer modules for research, editorial gates, platforms, human voice, visuals and analytics |
+| [AGENTS.md](AGENTS.md) / [CLAUDE.md](CLAUDE.md) | Markdown instructions for ChatGPT / Claude |
+| [PLAYBOOK.md](PLAYBOOK.md) / [WORKFLOW.md](WORKFLOW.md) | Full operating philosophy and weekly insight pipeline |
+| [sources/RADAR.md](sources/RADAR.md) | Maintained primary-source watchlist |
+| [examples/README.md](examples/README.md) | Safe illustrative usage, no personal content |
+| [integrations/README.md](integrations/README.md) | Optional read-only GitHub MCP, web, private notes and analytics |
+| [SECURITY.md](SECURITY.md) / [CONTRIBUTING.md](CONTRIBUTING.md) | Public repo boundaries and contributions |
 
 ## Optional integrations
 
-The core needs no MCP connection. For stronger results, the most useful **optional** inputs are verified public web research, approved read-only GitHub project evidence, a private Notion/notes ledger, and first-party platform analytics. See [integrations/README.md](integrations/README.md) for scope, security, limitations and example capability policy. Connections are configured **outside this repo**.
+No integrations are required. Verified public research helps current topics; approved read-only GitHub access helps inspect actual project code; a **private** notes/Notion ledger can keep editorial history; authorized analytics can support better learning. Configure permissions outside this repo. See [integrations guide](integrations/README.md).
 
-## Contributing and verification
+## Privacy and quality
 
-This repository intentionally contains **no finished example posts or personal performance records**. To propose a new skill, add a reusable `skills/<name>/SKILL.md`, cite supported claims, and run:
+This repository contains only reusable skills, instructions, examples, source methods, and validation code. **Finished posts, editorial drafts, private work, raw analytics and generated weekly reports must not be committed here**, even on PR branches. The guard in [scripts/validate_public_repo.py](scripts/validate_public_repo.py) checks file layout and links.
 
-```bash
-python3 scripts/validate_public_repo.py
-```
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) before submitting changes. Released under the [MIT License](LICENSE).
 
-The same check runs on pull requests. See [CONTRIBUTING.md](CONTRIBUTING.md). The framework does not itself publish articles or run weekly jobs; those actions require a separately configured assistant/scheduler and explicit approval.
+## Skills.sh distribution
+
+The skill uses the open [Agent Skills format](https://agentskills.io/specification) and is installable with the community [skills CLI](https://github.com/vercel-labs/skills). There is no separate publish command; public discovery on skills.sh may depend on successful installations and indexing, and is **not guaranteed by a GitHub merge**.
+
+---
+
+*Research-first, useful before viral, written like someone who means it.*

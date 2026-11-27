@@ -25,5 +25,9 @@ For 'topics this week', 'what should I post', or recurring research, first read 
 - **Never write generated drafts, candidate radars, post copies, personal notes or analytics to this public repo**, even on temporary branches or PRs. Only reusable framework source, templates, instructions and reference methodology belong here. See [SECURITY.md](SECURITY.md).
 - If a tool or third-party skill is unavailable, fall back to this repository's Markdown skills; do not claim it was used.
 
+## Installable distribution
+
+The self-contained [agentic-social-media skill](skills/agentic-social-media/SKILL.md) is the single recommended skills.sh/npx install target. Its bundled references must stay usable without repository-root files. The fuller root playbook remains available for direct chat reading. Only **fictional illustrative examples**, never generated user drafts, may live under `examples/`.
+
 ## Portability
 This repository uses plain Markdown, not model-specific prompt features. ChatGPT, Claude Code and other Markdown-reading agents can use these files. `CLAUDE.md` redirects to these same instructions. Keep canonical rules here rather than duplicating them.

@@ -15,8 +15,8 @@ from urllib.parse import unquote
 ROOT = Path(__file__).resolve().parents[1]
 ALLOWED_TOP_LEVEL = {
     ".github", ".gitignore", "AGENTS.md", "CLAUDE.md", "CONTRIBUTING.md",
-    "PLAYBOOK.md", "README.md", "SECURITY.md", "WORKFLOW.md",
-    "integrations", "research", "scripts", "skills", "sources", "templates",
+    "PLAYBOOK.md", "README.md", "SECURITY.md", "WORKFLOW.md", "LICENSE",
+    "examples", "integrations", "research", "scripts", "skills", "sources", "templates",
 }
 OUTPUT_COMPONENTS = {
     "drafts", "posts", "content", "outputs", "out", "private",
@@ -72,6 +72,30 @@ def main() -> int:
                 continue
             if not resolved.exists():
                 errors.append(f"Broken local link in {path}: {dest}")
+
+    # Validate the one self-contained distributable Agent Skill.
+    installed = ROOT / "skills" / "agentic-social-media" / "SKILL.md"
+    if not installed.exists():
+        errors.append("Missing installable skill: skills/agentic-social-media/SKILL.md")
+    else:
+        body = installed.read_text(encoding="utf-8")
+        lines = body.splitlines()
+        if not lines or lines[0] != "---":
+            errors.append("Distributable SKILL.md has no YAML frontmatter")
+        else:
+            try:
+                closing = lines.index("---", 1)
+            except ValueError:
+                errors.append("Distributable skill frontmatter is not closed")
+                closing = 1
+            fields = lines[1:closing]
+            if "name: agentic-social-media" not in fields:
+                errors.append("Distributable skill name must match folder")
+            if not any(line.startswith("description: ") and len(line) > 45 for line in fields):
+                errors.append("Distributable skill needs a meaningful description")
+        for required in ("research.md", "platforms.md", "gates.md", "visuals.md", "examples.md"):
+            if not (installed.parent / "references" / required).is_file():
+                errors.append(f"Missing bundled reference: {required}")
 
     if errors:
         print("Public repository hygiene FAIL:")
