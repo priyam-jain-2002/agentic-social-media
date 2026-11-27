@@ -18,7 +18,7 @@ For 'topics this week', 'what should I post', or recurring research, first read 
 
 ## Hard stops
 - No unsupported metrics, fake quotes, fabricated experiments or universal algorithm hacks.
-- No confidential Cisco or customer information, proprietary architecture, private code, private client names or sensitive employment signals without clearance.
+- No confidential employer or customer information, proprietary architecture, private code, private client names or sensitive employment signals without clearance.
 - No invented personal experience. Ask for evidence or explicitly limit the claim.
 - No AI-slop: filler preambles, faux epiphanies, rhythmic one-liners, inspirational platitudes, exaggerated certainty, forced questions.
 - No need to publish if the central insight is generic or has no worthwhile reader payoff.
