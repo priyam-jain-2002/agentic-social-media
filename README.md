@@ -1,49 +1,72 @@
 # Agentic Social Media
 
-A Markdown-first editorial operating system: **one evidence-backed idea -> up to three native pieces, with independent PUBLISH / ADAPT / SKIP decisions**.
+**An evidence-first, Markdown-based editorial operating system for LinkedIn, X and a personal blog.** It turns one real observation or verified external signal into **zero to three platform-native decisions**—never automatic cross-posting.
 
-**Platform order:** LinkedIn first, X second, personal blog third. No obligation to publish on every platform.
+Works with ChatGPT, Claude Code or another assistant that can read Markdown. No account connection, API key, hosted service or build step is required.
 
-## Weekly topic discovery
-- [WORKFLOW.md](WORKFLOW.md): the weekly operating rhythm, split between external news and firsthand project evidence.
-- [skills/topic-radar/SKILL.md](skills/topic-radar/SKILL.md): scan, validate, deduplicate and rank topic signals.
-- [skills/insight-extraction/SKILL.md](skills/insight-extraction/SKILL.md): capture work-in-progress observations without inventing or leaking project details.
-- [sources/RADAR.md](sources/RADAR.md): prioritized primary-source watchlist and scanning coverage.
-- [templates/weekly-topic-radar.md](templates/weekly-topic-radar.md) and [templates/insight-card.md](templates/insight-card.md): reusable capture formats.
-- [research/weeks/2026-11-27.md](research/weeks/2026-11-27.md): first sourced, real-week shortlist with explicit HOLD/ADAPT decisions.
+> **Framework-only repository.** Finished posts, drafts, dated weekly radar outputs, analytics and private project notes belong in chat or a separate private workspace—not in this repository. [Privacy rules](SECURITY.md).
 
-## Start here
-- [AGENTS.md](AGENTS.md): shared instructions for ChatGPT, Claude Code and other Markdown-reading assistants.
-- [CLAUDE.md](CLAUDE.md): Claude entrypoint, redirects to canonical agent rules.
-- [PLAYBOOK.md](PLAYBOOK.md): identity, taxonomy, orchestration, platform router, evidence and approval flow.
-- [skills/editorial-gates/SKILL.md](skills/editorial-gates/SKILL.md): hard no-publish rules and quality rubric.
-- [skills/discoverability/SKILL.md](skills/discoverability/SKILL.md): mandatory audience/taxonomy, hashtags/search terms and tag/mention gates.
-- [skills/packaging/SKILL.md](skills/packaging/SKILL.md): mandatory hook, early payoff, evidence/visual and human-voice gates.
-- [skills/voice/SKILL.md](skills/voice/SKILL.md): natural, non-formulaic voice editing.
-- [skills/linkedin/SKILL.md](skills/linkedin/SKILL.md), [skills/x/SKILL.md](skills/x/SKILL.md), [skills/blog/SKILL.md](skills/blog/SKILL.md): channel-native logic.
-- [skills/visual/SKILL.md](skills/visual/SKILL.md): graphic/media decision and generator brief.
-- [research/evidence.md](research/evidence.md): first-party sources, supported conclusions and research gaps.
-- [research/lessons.md](research/lessons.md): lessons and limitations from earlier posts.
-- [templates/idea-brief.md](templates/idea-brief.md): copy-ready intake.
-- [templates/content-record.md](templates/content-record.md): approval, posting and analytics record.
-- [examples/headless-commerce.md](examples/headless-commerce.md): real three-channel routing example, including a legitimate blog HOLD.
+## Quick start
 
-## Example prompts
-- **Weekly discovery:** 'Use WORKFLOW.md and topic-radar/SKILL.md. Research the previous seven days from primary sources, find 3–5 genuine engineering/product problems, include links, a testable original angle, platform decisions and HOLD where appropriate. Do not draft automatically.'
-- **Project observation:** 'Use insight-extraction/SKILL.md on my recent building notes, identify what is safe to share, evidence gaps and potential worthwhile ideas.'
-- **New idea:** 'Use AGENTS.md. Evaluate this observation for LinkedIn, X and blog; research and challenge it; don't draft until the idea passes gates: [idea].'
-- **One analogy:** 'Map [source concept] to [target issue], state where it breaks, then independently route to LinkedIn/X/blog with SKIP allowed.'
-- **Review draft:** 'Audit this copy with editorial-gates and voice. Explain the most important weakness before editing.'
-- **Visual:** 'Apply the visual skill and return a brief only if an image is necessary; no invented evidence.'
-- **Postmortem:** 'Use analytics skill to compare 24h/72h/7d results without causal overclaiming.'
+1. Ask your assistant to read [AGENTS.md](AGENTS.md) (Claude Code also reads [CLAUDE.md](CLAUDE.md)).
+2. Share a project observation, source article, technical claim or analogy. Alternatively request a current [weekly topic scan](skills/topic-radar/SKILL.md).
+3. The agent researches and challenges the idea, identifies reader value, and checks evidence and confidentiality.
+4. It independently chooses `PUBLISH / ADAPT / HOLD / SKIP` for LinkedIn, X and blog.
+5. Only appropriate channels receive drafts **in the conversation or user-approved private destination**. No automatic publication.
 
-## Principles
-- Proof before prose; value in the opening; no engagement bait or inflated certainty.
-- Firsthand engineering and market observations over generic AI news.
-- Avoid forced intros, fake epiphanies, excessive fragments and decorative infographics.
-- Support or qualify all claims; never expose private employer/client information.
-- Editorial scores are heuristics, **not** platform algorithm formulas.
-- Publication always requires user approval; this repository does **not** auto-post.
+Try:
 
-## How to extend
-Introduce new Markdown skills in `skills/<name>/SKILL.md` with trigger, inputs, outputs, hard stops and review examples. Add proven platform research to `research/evidence.md` with date and URL. Third-party tools may assist research, graphics or publishing **only** after permission, source and safety checks.
+```text
+Read AGENTS.md and WORKFLOW.md. Research the last 7 days using
+sources/RADAR.md, then propose 3–5 topics with primary sources,
+one concrete reader problem, counterargument and experiment each.
+Independently assess LinkedIn, X and blog. Do not draft or post yet.
+```
+
+For a firsthand insight:
+
+```text
+Read AGENTS.md and skills/insight-extraction/SKILL.md.
+Here's what I built / discovered: ...
+Find the specific claim we can prove and the reader who benefits.
+Keep the record private; don't commit content to this repository.
+```
+
+## Structure
+
+| Location | Purpose |
+| --- | --- |
+| [AGENTS.md](AGENTS.md), [CLAUDE.md](CLAUDE.md) | Cross-client editorial contract |
+| [PLAYBOOK.md](PLAYBOOK.md) | Identity, taxonomy, audience, platform routing |
+| [WORKFLOW.md](WORKFLOW.md) | Weekly signal + firsthand insight pipeline |
+| [skills/](skills) | Independent research, publishing, editing, discovery, visuals and analytics skills |
+| [sources/RADAR.md](sources/RADAR.md) | Public-source watchlist |
+| [research/evidence.md](research/evidence.md) | Durable primary-source evidence about platform behavior |
+| [templates/](templates) | Blank reusable private-workspace templates |
+| [integrations/README.md](integrations/README.md) | Optional MCP/source connections and privacy boundaries |
+| [scripts/validate_public_repo.py](scripts/validate_public_repo.py) | Repo-only hygiene and Markdown link validation |
+| [SECURITY.md](SECURITY.md), [CONTRIBUTING.md](CONTRIBUTING.md) | Safety policy and contribution process |
+
+## Operating principles
+
+- **Reader payoff first.** Explain a concrete result, problem, experiment or useful difference before generic context.
+- **Original evidence matters.** Never pretend to have run code, spoken to a customer or observed metrics without proof.
+- **Critical editing.** Every claim, platform choice, visual, keyword, hashtag and person tag must earn its place.
+- **No AI-slop.** Natural engineering prose; no fake suspense, slogans, or manufactured virality.
+- **Independent channel decisions.** A topic can suit a durable blog article but not a LinkedIn post (or vice versa).
+- **No publishing without approval.** Research connectors are read-only by default; no unapproved posting, DMs or repo writes.
+- **No algorithm myths.** Length and hashtag guidance are editorial experiments, not reach guarantees.
+
+## Optional integrations
+
+The core needs no MCP connection. For stronger results, the most useful **optional** inputs are verified public web research, approved read-only GitHub project evidence, a private Notion/notes ledger, and first-party platform analytics. See [integrations/README.md](integrations/README.md) for scope, security, limitations and example capability policy. Connections are configured **outside this repo**.
+
+## Contributing and verification
+
+This repository intentionally contains **no finished example posts or personal performance records**. To propose a new skill, add a reusable `skills/<name>/SKILL.md`, cite supported claims, and run:
+
+```bash
+python3 scripts/validate_public_repo.py
+```
+
+The same check runs on pull requests. See [CONTRIBUTING.md](CONTRIBUTING.md). The framework does not itself publish articles or run weekly jobs; those actions require a separately configured assistant/scheduler and explicit approval.
