@@ -7,6 +7,7 @@ This is a Markdown-first editorial **framework**, not a repository of social pos
 - Reusable templates in `templates/`.
 - Cross-client instructions, integrations guidance, source manifests and policy improvements.
 - Small validation scripts/tests that help keep the repository clean.
+- Clearly labeled **synthetic teaching examples** with illustrative hooks and routing decisions. These must not be unpublished personal drafts, fabricated analytics or claims of published outcomes.
 - Public primary-source methodology, with links, dates and appropriately bounded claims.
 
 ## Not accepted
@@ -19,7 +20,8 @@ This is a Markdown-first editorial **framework**, not a repository of social pos
 2. Preserve platform-specific PUBLISH/ADAPT/HOLD/SKIP decisions.
 3. Prefer authoritative source links and note uncertainty.
 4. Check instructions in both `AGENTS.md` and `CLAUDE.md` remain interoperable.
-5. Run `python3 scripts/validate_public_repo.py`.
+5. If changing the distributable skill, keep all of its required references inside `skills/agentic-social-media/`; do not make installed instructions depend on repository-root files.
+6. Run `python3 scripts/validate_public_repo.py`.
 6. Confirm no unapproved private data or generated editorial output is committed.
 
 Do not claim a tool/source was connected or executed unless it actually was.
