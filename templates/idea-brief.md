@@ -1,9 +1,14 @@
 # Idea brief: [working title]
 
 - Date:
+- Origin: firsthand project / weekly verified signal / evergreen research / analogy
+- Radar link or safe insight-card location:
+- News source publication date + event date (if relevant):
+- Dedup against last 90 days of posts:
 - Raw observation / analogy (verbatim source):
 - Claim in one sentence:
 - Primary reader + pain:
+- Smallest credible firsthand test/demo (if missing, HOLD):
 - Desired useful takeaway:
 - Taxonomy tags:
 - Why this author has firsthand standing:
