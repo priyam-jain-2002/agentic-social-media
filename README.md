@@ -9,10 +9,13 @@ A Markdown-first editorial operating system: **one evidence-backed idea -> up to
 - [CLAUDE.md](CLAUDE.md): Claude entrypoint, redirects to canonical agent rules.
 - [PLAYBOOK.md](PLAYBOOK.md): identity, taxonomy, orchestration, platform router, evidence and approval flow.
 - [skills/editorial-gates/SKILL.md](skills/editorial-gates/SKILL.md): hard no-publish rules and quality rubric.
+- [skills/discoverability/SKILL.md](skills/discoverability/SKILL.md): mandatory audience/taxonomy, hashtags/search terms and tag/mention gates.
+- [skills/packaging/SKILL.md](skills/packaging/SKILL.md): mandatory hook, early payoff, evidence/visual and human-voice gates.
 - [skills/voice/SKILL.md](skills/voice/SKILL.md): natural, non-formulaic voice editing.
 - [skills/linkedin/SKILL.md](skills/linkedin/SKILL.md), [skills/x/SKILL.md](skills/x/SKILL.md), [skills/blog/SKILL.md](skills/blog/SKILL.md): channel-native logic.
 - [skills/visual/SKILL.md](skills/visual/SKILL.md): graphic/media decision and generator brief.
 - [research/evidence.md](research/evidence.md): first-party sources, supported conclusions and research gaps.
+- [research/lessons.md](research/lessons.md): lessons and limitations from earlier posts.
 - [templates/idea-brief.md](templates/idea-brief.md): copy-ready intake.
 - [templates/content-record.md](templates/content-record.md): approval, posting and analytics record.
 - [examples/headless-commerce.md](examples/headless-commerce.md): real three-channel routing example, including a legitimate blog HOLD.
